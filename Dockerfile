@@ -1,4 +1,4 @@
-FROM eclipse-temurin:17-jdk
+FROM public.ecr.aws/docker/library/eclipse-temurin:17-jdk
 WORKDIR /app
 COPY target/simple-java-app-1.0-SNAPSHOT.jar app.jar
 CMD ["java", "-jar", "app.jar"]
